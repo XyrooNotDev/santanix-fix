@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#08090D" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="18dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="18dp">
+            <ImageView android:layout_width="42dp" android:layout_height="42dp"
+                android:src="@drawable/logo_santanic" android:contentDescription="Logo" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Santanic Build" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="ANDROID BUILD AUTOMATION" android:textColor="#858A98" android:textSize="9sp" />
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:padding="8dp" android:text="● Connected" android:textColor="#55E58B"
+                android:textSize="11sp" android:background="@drawable/bg_panel" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp"
+            android:background="@drawable/bg_panel" android:layout_marginBottom="24dp">
+            <TextView android:layout_width="48dp" android:layout_height="48dp" android:gravity="center"
+                android:text="●" android:textSize="30sp" android:textColor="#FFFFFF"
+                android:background="@drawable/bg_tile_blue" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginStart="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Selamat Datang!" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="15sp" />
+                <TextView android:id="@+id/tvUsername" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="GitHub User" android:textColor="#C9CBD3" android:textSize="13sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" android:text="◆ GitHub Connected" android:textColor="#55E58B" android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Pilih Jenis Build" android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold" />
+        <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:columnCount="2" android:useDefaultMargins="true" android:layout_marginTop="10dp">
+            <com.google.android.material.card.MaterialCardView android:id="@+id/cardAndroid"
+                android:layout_width="0dp" android:layout_height="142dp" android:layout_columnWeight="1"
+                android:layout_margin="4dp" app:cardBackgroundColor="#123D2C" app:cardCornerRadius="16dp"
+                app:strokeColor="#277B55" app:strokeWidth="1dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_android" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:text="Android Studio" android:textColor="#FFFFFF" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Build APK" android:textColor="#A9DCC0" android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/cardFlutter"
+                android:layout_width="0dp" android:layout_height="142dp" android:layout_columnWeight="1"
+                android:layout_margin="4dp" app:cardBackgroundColor="#172B50" app:cardCornerRadius="16dp"
+                app:strokeColor="#31558D" app:strokeWidth="1dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_flutter" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:text="Flutter" android:textColor="#FFFFFF" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Build APK" android:textColor="#B7C9EB" android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/cardWeb"
+                android:layout_width="0dp" android:layout_height="142dp" android:layout_columnWeight="1"
+                android:layout_margin="4dp" app:cardBackgroundColor="#35205A" app:cardCornerRadius="16dp"
+                app:strokeColor="#7546B8" app:strokeWidth="1dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_web" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:text="WebToAPK" android:textColor="#FFFFFF" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Build APK" android:textColor="#D0B7F0" android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/cardHistory"
+                android:layout_width="0dp" android:layout_height="142dp" android:layout_columnWeight="1"
+                android:layout_margin="4dp" app:cardBackgroundColor="#63300C" app:cardCornerRadius="16dp"
+                app:strokeColor="#A85A1D" app:strokeWidth="1dp" app:cardElevation="0dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center">
+                    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_history" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:text="Riwayat Build" android:textColor="#FFFFFF" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Lihat hasil build" android:textColor="#F0C8A8" android:textSize="11sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </GridLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp" android:padding="14dp" android:background="@drawable/bg_panel"
+            android:text="Build otomatis menggunakan GitHub Actions. Pastikan repository dan file workflow sudah tersedia."
+            android:textColor="#A9ABB5" android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
